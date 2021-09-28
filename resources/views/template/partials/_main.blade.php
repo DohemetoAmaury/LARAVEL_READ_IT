@@ -9,6 +9,7 @@
 
         @include('template.partials._aside')
 
+        
       </div>
     </div>
   </section> <!-- .section -->
