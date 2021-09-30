@@ -19,16 +19,9 @@
 <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
 
  @include('tags._index', ['tags' => $post->tags])
+ @include('authors._show', ['author' => $post->authors])
 
-<div class="about-author d-flex p-4 bg-light">
-  <div class="bio mr-5">
-    <img src="{{ asset('assets/images/person_1.jpg')}}" alt="Image placeholder" class="img-fluid mb-4">
-  </div>
-  <div class="desc">
-    <h3>George Washington</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
-  </div>
-</div>
+
 
 
 <div class="pt-5 mt-5">
