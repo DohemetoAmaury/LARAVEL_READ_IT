@@ -21,7 +21,7 @@
  @include('tags._index', ['tags' => $post->tags])
  @include('authors._show', ['author' => $post->authors])
  @include('comments._index', ['comments' => $post->comments])
- 
+
 </div> <!-- .col-md-8 -->
 <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
 <div class="sidebar-box">
