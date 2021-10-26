@@ -28,3 +28,6 @@ Route::get('/posts/{post}/{slug}', [\App\Http\Controllers\PostsController::class
 
 Route::get('/ajax/posts/', [\App\Http\Controllers\PostsController::class, 'more'])
     ->name('ajax.posts.more');
+
+Route::get('/ajax/comments/add', [\App\Http\Controllers\CommentsController::class, 'add'])
+        ->name('ajax.comments.add');

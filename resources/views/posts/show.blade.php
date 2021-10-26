@@ -32,4 +32,22 @@
     </div>
   </form>
 </div>
+@endsection
+@section('scripts')
+<script>
+$('#addComment').submit(function(e) {
+      e.preventDefault();
+      $.get( $(this).attr('action'), {
+        pseudo: $("#addComment #pseudo").val(),
+        content: $(this).find('#content').val(),
+        postID: $(this).find('#postID').val()
+      })
+        .done(function (rep) {
+           $('.comment-list').append(rep)
+                             .find('li:last-of-type')
+                             .hide()
+                             .slideDown();
+        });
+    });
+</script>
 @stop
